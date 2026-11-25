@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.1" provider-name="b.a.">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.mediacenter" version="0.4.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
+    <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+    <website>https://watch.littlebirdtampa.com</website>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.1" provider-name="b.a.">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">mediaCENTER</summary>
+    <description lang="en_GB">Opens mediaCENTER full screen.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+<addon id="skin.mediacenter" version="0.4.1" name="mediaCENTER" provider-name="b.a.">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="plugin.video.mediacenter" version="0.4.1"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<summary lang="en_GB">mediaCENTER</summary>
+		<description lang="en_GB">mediaCENTER's look. Based on Estuary by phil65 and Ichabod Fletchman (GPL-2.0, CC BY-SA 4.0).</description>
+	</extension>
+</addon>
+<addon id="repository.mediacenter.test" name="mediaCENTER Test Updates" version="1.0.0" provider-name="b.a.">
+  <extension point="xbmc.addon.repository" name="mediaCENTER Test Updates">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/andruexmichael/mediacenter-kodi-test/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/andruexmichael/mediacenter-kodi-test/main/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/andruexmichael/mediacenter-kodi-test/main/</datadir>
+      <hashes>false</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Test builds of mediaCENTER</summary>
+    <description lang="en_GB">For the owner's own box: installs new test versions of mediaCENTER before they go to everyone. Install this once, then install mediaCENTER from it.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+</addons>
