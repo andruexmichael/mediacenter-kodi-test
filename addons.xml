@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.1" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.3" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.1"/>
