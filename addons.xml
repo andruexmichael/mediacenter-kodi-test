@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.5" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.6" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.mediacenter" version="0.4.2"/>
+    <import addon="script.mediacenter" version="0.4.6"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -13,7 +13,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>Movies, shows and channels play in mediaCENTER's own player: a loading screen, links checked first, the next source tried by itself, and clear messages when something won't play. Back returns to the page you were on. The Guide has a mini player. Choose a version like on the web, episodes with pictures, and Play on a show picks up where you left off.</news>
+    <news>The iPhone remote: Return on the keyboard searches and moves to the results, Pause works, and the TV button opens the Guide with what you were watching still playing in the mini player at the top. In the Guide, a channel opens full screen and Back keeps it playing in the mini player; OK on the mini player goes full screen again.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -22,7 +22,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.2" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.6" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
