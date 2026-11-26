@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.6" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.7" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.7"/>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>Slow links get more time and are no longer passed up: one that starts after "This version didn't start" now plays. Updates no longer get stuck. Search opens the big keyboard. Movies and TV Shows list the streaming services. See more no longer crashes. The Guide's mini player shows the whole picture.</news>
+    <news>A new look from the design: the menu sits on the left over the picture and opens with names on Left. Home has a reachable Featured title with its own full page, a typed greeting, bigger Top 10 posters and a Games row with team logos. Pause and Back to live on live TV, smoother channel changes, and the TV button opens the menu (two quick presses: the Guide). Hold OK or press the menu key on Continue Watching or an episode for its options. The box keeps itself up to date.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.6" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.7" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -40,7 +40,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.2" provider-name="b.a.">
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.3" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -53,7 +53,7 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.2.2: while mediaCENTER isn't signed in, an iPhone that asks to pair gets a code on the TV right away.</news>
+    <news>0.2.3: one press of the TV button opens mediaCENTER's menu; two quick presses open the Guide.</news>
   </extension>
 </addon>
 <addon id="skin.mediacenter" version="0.4.3" name="mediaCENTER" provider-name="b.a.">
