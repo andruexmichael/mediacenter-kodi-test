@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.7" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.8" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.mediacenter" version="0.4.7"/>
-    <import addon="service.mediacenter.remote" version="0.2.0" optional="true"/>
+    <import addon="script.mediacenter" version="0.4.8"/>
+    <import addon="service.mediacenter.remote" version="0.2.1" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>The iPhone remote is now part of mediaCENTER, with nothing else to run: pair it from setup or Settings, where the code shows on the TV. The iPhone keyboard works in every text box, Wi-Fi passwords too. The power button opens Power off and a sleep timer. Update checks say what went wrong when they can't finish.</news>
+    <news>The picture shows on the Raspberry Pi again. New loading screens for movies, shows and games, a new busy spinner and notifications. Player: Play/Pause first, move along the timeline, fast forward and rewind. Back stops the sound. Check for updates offers Restart now.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.7" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.8" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -40,7 +40,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.0" provider-name="b.a.">
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.1" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -53,10 +53,10 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.2.0: the remote runs inside Kodi. Pair from mediaCENTER's setup or Settings; the code shows on the TV.</news>
+    <news>0.2.1: the remote now starts on LibreELEC; rewind and fast forward move along the player's timeline; the Up, Up, Down, Down code is off unless you turn it on.</news>
   </extension>
 </addon>
-<addon id="skin.mediacenter" version="0.4.2" name="mediaCENTER" provider-name="b.a.">
+<addon id="skin.mediacenter" version="0.4.3" name="mediaCENTER" provider-name="b.a.">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="plugin.video.mediacenter" version="0.4.4"/>
