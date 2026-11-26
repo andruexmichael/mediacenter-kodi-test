@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.6" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.7" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.mediacenter" version="0.4.6"/>
+    <import addon="script.mediacenter" version="0.4.7"/>
+    <import addon="service.mediacenter.remote" version="0.2.0" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -13,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>The iPhone remote: Return on the keyboard searches and moves to the results, Pause works, and the TV button opens the Guide with what you were watching still playing in the mini player at the top. In the Guide, a channel opens full screen and Back keeps it playing in the mini player; OK on the mini player goes full screen again.</news>
+    <news>The iPhone remote is now part of mediaCENTER, with nothing else to run: pair it from setup or Settings, where the code shows on the TV. The iPhone keyboard works in every text box, Wi-Fi passwords too. The power button opens Power off and a sleep timer. Update checks say what went wrong when they can't finish.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -22,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.6" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.7" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -37,6 +38,22 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
+  </extension>
+</addon>
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.0" provider-name="b.a.">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Use the iPhone's remote and keyboard with mediaCENTER</summary>
+    <description lang="en_GB">The iPhone's Control Center remote and keyboard work this box, with nothing else to install. Pair an iPhone in mediaCENTER: Settings, Remotes and controllers, iPhone remote.</description>
+    <platform>all</platform>
+    <license>Proprietary. Parts: atvr4samsung and pyatv (MIT), see resources/lib/remote/vendor.</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>0.2.0: the remote runs inside Kodi. Pair from mediaCENTER's setup or Settings; the code shows on the TV.</news>
   </extension>
 </addon>
 <addon id="skin.mediacenter" version="0.4.2" name="mediaCENTER" provider-name="b.a.">
