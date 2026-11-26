@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.4" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.6" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.7"/>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>Updates no longer get stuck: nothing has to close, and the box restarts by itself when the new version is in place. Search opens the big keyboard, so the iPhone's keyboard and dictation type straight in. Movies and TV Shows list the streaming services down the left. See more no longer crashes. The Guide's mini player shows the whole picture.</news>
+    <news>Slow links get more time and are no longer passed up: one that starts after "This version didn't start" now plays. Updates no longer get stuck. Search opens the big keyboard. Movies and TV Shows list the streaming services. See more no longer crashes. The Guide's mini player shows the whole picture.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.4" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.6" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
