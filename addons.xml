@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.1" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.mediacenter" version="0.4.9"/>
+    <import addon="script.mediacenter" version="0.4.9.1"/>
     <import addon="service.mediacenter.remote" version="0.2.1" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>The website's look: colour themes, Home, Search with genres and posters, Picked for you with a short survey, See more on New rows, Guest Room, announcements and a welcome tour. A Sports page with My Teams, game pages, scores while you watch and game alerts. Guide: a Sports group, favourites on top, Last channel, Jump to and hiding groups. Skip Intro and Up Next, episodes and subtitles in the player, Continue Watching in step with your other devices, watch history and voice search. Automatic idle-time updates, an explicit update-channel picker and improved update downloads.</news>
+    <news>Update shutdown fix: close the app and background service before replacing files, and restart directly when installation finishes.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.1" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
