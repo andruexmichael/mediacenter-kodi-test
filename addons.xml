@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.2" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.3" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.7"/>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>The picture now shows on a Raspberry Pi (no more sound over a black screen), Play on a show page works again, and updates no longer leave mediaCENTER switched off.</news>
+    <news>Home looks more like the website, with a holiday movies row. Choose a source before a movie or episode plays, and a stalled source gives way to the next. The iPhone code shows right away on a box that isn't signed in. Updates show a progress bar. Apps is gone from the box.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.2" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.3" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -40,7 +40,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.1" provider-name="b.a.">
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.2" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -53,7 +53,7 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.2.1: the remote now starts on LibreELEC; rewind and fast forward move along the player's timeline; the Up, Up, Down, Down code is off unless you turn it on.</news>
+    <news>0.2.2: while mediaCENTER isn't signed in, an iPhone that asks to pair gets a code on the TV right away.</news>
   </extension>
 </addon>
 <addon id="skin.mediacenter" version="0.4.3" name="mediaCENTER" provider-name="b.a.">
