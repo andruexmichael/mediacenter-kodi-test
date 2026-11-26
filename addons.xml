@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.1" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.4.9.2" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.mediacenter" version="0.4.9.1"/>
-    <import addon="service.mediacenter.remote" version="0.2.1" optional="true"/>
+    <import addon="script.mediacenter" version="0.4.7"/>
+    <import addon="service.mediacenter.remote" version="0.2.0" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>Update shutdown fix: close the app and background service before replacing files, and restart directly when installation finishes.</news>
+    <news>The picture now shows on a Raspberry Pi (no more sound over a black screen), Play on a show page works again, and updates no longer leave mediaCENTER switched off.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.1" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.4.9.2" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
