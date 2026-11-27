@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.5.0.0" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.5.0.1" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.7"/>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>0.5.0.0: Choose a source before playing is back in Settings, and when it's on the versions come before the loading screen. Links get a fair try: a late error from one link no longer fails the next, and slow links aren't written down as failed. The Guide no longer leaves the iPhone remote stuck. Back from 0.4.9.3: the box's own Search keyboard (no IP address or QWERTY), subtitles drawn by the player, episodes sideways with an episode page on hold, Settings in groups, the iPhone showing what's playing, hold OK on the iPhone, and the box's own walkthrough. Home: big Top 10 numbers, the website's greeting size, a hold sheet on every card, My List posters looked up again. The admin's checklist and log show their newest lines.</news>
+    <news>0.5.0.1: changing channels in the Guide no longer waits on the box's own question about the new channel, asks the provider once at a time, and tries again once when the provider says too many connections. Back on the busy circle cancels Choose a version. No admin checklist or log on the loading screen; its picture is brighter and the poster bigger. Home sits closer to the dock. CAM, telesync and screener copies never show. The b.a. logo on the menu and in Settings has no square and takes your theme's colours, and the theme shows more: stronger glows, tinted panels, and Settings gets them too. The iPhone remote no longer stops at start, and starts again by itself if it ever stops.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.5.0.0" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.5.0.1" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -40,7 +40,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.4" provider-name="b.a.">
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.5" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -53,7 +53,7 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.2.4: the iPhone keyboard types into the TV keyboard only (Search has no letters on the page now); the Siri button brings up typing; the iPhone shows what is playing, with play, pause and back or forward 10 seconds; holding OK opens more about the highlighted thing; Play/Pause on a highlighted card, with nothing playing, opens its hold sheet (full name and description). 0.2.3: one press of the TV button opens mediaCENTER's menu; two quick presses open the Guide.</news>
+    <news>0.2.5: no longer stops at start on some boxes (Kodi calls on plain threads), and starts again by itself if it stops. 0.2.4: the iPhone keyboard types into the TV keyboard only (Search has no letters on the page now); the Siri button brings up typing; the iPhone shows what is playing, with play, pause and back or forward 10 seconds; holding OK opens more about the highlighted thing; Play/Pause on a highlighted card, with nothing playing, opens its hold sheet (full name and description). 0.2.3: one press of the TV button opens mediaCENTER's menu; two quick presses open the Guide.</news>
   </extension>
 </addon>
 <addon id="skin.mediacenter" version="0.4.4" name="mediaCENTER" provider-name="b.a.">
