@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.5.0.2" provider-name="b.a.">
+<addon id="plugin.video.mediacenter" name="mediaCENTER" version="0.5.0.5" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.mediacenter" version="0.4.7"/>
@@ -14,7 +14,7 @@
     <summary lang="en_GB">mediaCENTER: movies, shows, live TV and sports</summary>
     <description lang="en_GB">Sign in with your mediaCENTER account to watch movies, shows, live TV and sports, with Continue Watching and My List shared with your other devices.</description>
     <platform>all</platform>
-    <news>0.5.0.2: live TV no longer waits about 40 s after a channel closes (changing channels, Back on the Guide, leaving a game): Kodi stops looking the channel up when it saves it, and restarts once after this update so that takes effect. When the provider still counts the old channel, the box keeps trying for about 15 s instead of giving up. Choose a version comes up once there are plenty of versions, without waiting for the slowest add-on. The iPhone's Mute works.</news>
+    <news>0.5.0.5: Search includes the connected library, separates Movies, Shows, Games and Channels, with five results and See more. Programme titles and channel numbers match too. Search posters can show a small streaming-service badge. Larger service logos replace the white plates and repeated names. Cinema lighting recognises app movies and episodes when Kodi reports an unknown video.</news>
     <license>Proprietary</license>
     <website>https://watch.littlebirdtampa.com</website>
     <assets>
@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="script.mediacenter" name="mediaCENTER" version="0.5.0.2" provider-name="b.a.">
+<addon id="script.mediacenter" name="mediaCENTER" version="0.5.0.5" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -40,7 +40,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.6" provider-name="b.a.">
+<addon id="service.mediacenter.remote" name="mediaCENTER Remote" version="0.2.8" provider-name="b.a.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -53,10 +53,10 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>0.2.6: the iPhone's Mute works; the log says how long OK was held. 0.2.5: no longer stops at start on some boxes (Kodi calls on plain threads), and starts again by itself if it stops. 0.2.4: the iPhone keyboard types into the TV keyboard only (Search has no letters on the page now); the Siri button brings up typing; the iPhone shows what is playing, with play, pause and back or forward 10 seconds; holding OK opens more about the highlighted thing; Play/Pause on a highlighted card, with nothing playing, opens its hold sheet (full name and description). 0.2.3: one press of the TV button opens mediaCENTER's menu; two quick presses open the Guide.</news>
+    <news>0.2.8: holding OK opens the hold screen while still held; iOS pad clicks no longer start an episode as OK goes down. Includes GitHub fixes bc979ac and 58dc815. 0.2.7: remote discovery refreshes and recovers after network interruptions; discovery health is supervised. 0.2.6: the iPhone's Mute works; the log says how long OK was held. 0.2.5: no longer stops at start on some boxes (Kodi calls on plain threads), and starts again by itself if it stops. 0.2.4: the iPhone keyboard types into the TV keyboard only (Search has no letters on the page now); the Siri button brings up typing; the iPhone shows what is playing, with play, pause and back or forward 10 seconds; holding OK opens more about the highlighted thing; Play/Pause on a highlighted card, with nothing playing, opens its hold sheet (full name and description). 0.2.3: one press of the TV button opens mediaCENTER's menu; two quick presses open the Guide.</news>
   </extension>
 </addon>
-<addon id="skin.mediacenter" version="0.4.4" name="mediaCENTER" provider-name="b.a.">
+<addon id="skin.mediacenter" version="0.4.7" name="mediaCENTER" provider-name="b.a.">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="plugin.video.mediacenter" version="0.4.4"/>
